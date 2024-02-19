@@ -6,7 +6,7 @@ orbs:
 jobs:
   build_and_push:
     docker:
-      - image: cimg/node:16
+      - image: cimg/node:16.13 
     steps:
       - checkout
 
