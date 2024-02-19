@@ -26,6 +26,19 @@
 
 ![Screenshot](./screenshots/Screenshot_8.png)
 
-### Screenshot of DockerHub shows the images: can access through public url: https://hub.docker.com/r/0936064271/hungntn/tags on tags tab
+### Screenshot of DockerHub shows the images using CircleCI to run CI/CD instead of TravisCI:
 
-![Screenshot](./screenshots/Screenshot_9.png)
+- Screenshot of DockerHub shows the images: 
+
+![Screenshot](./screenshots/Screenshot_10.png)
+
+#### Can access repo docker hub through public url:
+
+-  udagram-frontend : https://hub.docker.com/r/0936064271/udagram-frontend
+-  udagram-reverseproxy : https://hub.docker.com/r/0936064271/reverseproxy
+-  udagram-udagram-api-feed : https://hub.docker.com/r/0936064271/udagram-api-feed
+-  udagram-udagram-api-user : https://hub.docker.com/r/0936064271/udagram-api-user
+
+- CircleCI showing a successful build job:
+
+![Screenshot](./screenshots/Screenshot_11.png)
