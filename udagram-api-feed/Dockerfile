@@ -1,10 +1,12 @@
-FROM node:12
+FROM node:14
 ## Create app directory
 WORKDIR /usr/src/app
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied where available (npm@5+)
 COPY package*.json ./
 RUN npm ci 
+RUN npm install typescript@latest --save-dev && \
+    npm install @types/bluebird@latest @types/express-serve-static-core@latest @types/lodash@latest --save-dev
 ## Bundle app source
 COPY . .
 EXPOSE 8080

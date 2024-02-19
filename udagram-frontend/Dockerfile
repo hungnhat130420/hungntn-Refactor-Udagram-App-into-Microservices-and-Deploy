@@ -1,11 +1,14 @@
 ### Build
-FROM beevelop/ionic:latest AS ionic
+FROM node:16 AS ionic
 ## Create app directory
 WORKDIR /usr/src/app
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
-RUN npm ci
+RUN npm uninstall typescript --legacy-peer-deps
+RUN npm install typescript@3.5.3 --save-dev --legacy-peer-deps
+RUN npm install -g @ionic/cli
+RUN npm ci --legacy-peer-deps
 ## Bundle app source
 COPY . .
 RUN ionic build
