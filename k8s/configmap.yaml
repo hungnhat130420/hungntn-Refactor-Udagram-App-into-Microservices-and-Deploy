@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myapp-config
+data:
+  POSTGRES_HOST: cdr.ccomtrfmzdr0.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: test-418053238288-dev
+  AWS_REGION: us-east-1
+  URL: http://localhost:8100

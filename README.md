@@ -42,3 +42,56 @@
 - CircleCI showing a successful build job:
 
 ![Screenshot](./screenshots/Screenshot_11.png)
+
+## A screenshots of kubectl commands show the Frontend and API projects deployed in Kubernetes:
+
+![Screenshot](./screenshots/Screenshot_12.png)
+
+
+## The output of kubectl get pods indicates that the pods are running successfully with the STATUS value Running:
+
+![Screenshot](./screenshots/Screenshot_13.png)
+
+## The output of kubectl describe services:
+
+- backend-feed:
+
+![Screenshot](./screenshots/Screenshot_14.png)
+
+- backend-user:
+
+![Screenshot](./screenshots/Screenshot_15.png)
+
+- publicfrontend:
+
+![Screenshot](./screenshots/Screenshot_17.png)
+
+- publicreverseproxy:
+
+![Screenshot](./screenshots/Screenshot_18.png)
+
+- kubectl get svc:
+
+![Screenshot](./screenshots/Screenshot_19.png)
+
+## Kubernetes services are replicated. At least one of the Kubernetes services has replicas: defined with a value greater than 1 in itsdeployment.yml file:
+
+- api-feed-deployment:
+
+![Screenshot](./screenshots/Screenshot_20.png)
+
+- api-user-deployment:
+
+![Screenshot](./screenshots/Screenshot_21.png)
+
+- frontend-deployment:
+
+![Screenshot](./screenshots/Screenshot_22.png)
+
+- reverseproxy-deployment:
+
+![Screenshot](./screenshots/Screenshot_23.png)
+
+## Screenshot of Kubernetes cluster of command kubectl describe hpa has autoscaling configured with CPU metrics:
+
+![Screenshot](./screenshots/Screenshot_24.png)
